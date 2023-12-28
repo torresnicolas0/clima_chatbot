@@ -9,23 +9,31 @@ Este proyecto es un chatbot inteligente diseñado para interactuar con usuarios 
 ## Dependencias
 Este proyecto requiere las siguientes herramientas y paquetes:
 
-- Python 3.8 o superior
-- Spacy 3.7.2: Para procesamiento de lenguaje natural.
-- NumPy 1.26.2: Para cálculos numéricos.
-- Pandas 2.1.4: Para manipulación de datos.
-- Scikit-learn 1.3.2: Para algoritmos de aprendizaje automático.
-- Python-telegram-bot 20.7: Para la creación de bots de Telegram.
-- Requests 2.31.0: Para realizar solicitudes HTTP.
-- Joblib 1.3.2: Para la serialización de modelos.
-- Language-tool-python 2.7.1: Para la corrección de texto.
-- es-core-news-sm 3.7.0: Modelo en español para Spacy.
+- **Python 3.8** o superior
+- **Spacy 3.7.2**: Para procesamiento de lenguaje natural.
+- **NumPy 1.26.2**: Para cálculos numéricos.
+- **Pandas 2.1.4**: Para manipulación de datos.
+- **Scikit-learn 1.3.2**: Para algoritmos de aprendizaje automático.
+- **Python-telegram-bot 20.7**: Para la creación de bots de Telegram.
+- **Requests 2.31.0**: Para realizar solicitudes HTTP.
+- **Joblib 1.3.2**: Para la serialización de modelos.
+- **Language-tool-python 2.7.1**: Para la corrección de texto.
+- **es-core-news-sm 3.7.0**: Modelo en español para Spacy.
+- **pycountry 23.12.11**: Datos de países e idiomas.
+- **python-dotenv 1.0.0**: Gestión de variables de entorno.
+- **ephem 4.1.5**: Cálculos astronómicos.
+- **timezonefinder 6.2.0**: Determinación de zonas horarias.
 
 Puedes instalar todas las dependencias necesarias ejecutando:
 
 ```bash
 pip install -r requirements.txt
-# No olvides instalar el modelo de Spacy con:
-# python -m spacy download es_core_news_sm
+```
+
+Instala el modelo de Spacy con:
+
+```bash
+python -m spacy download es_core_news_sm
 ```
 
 ### Pre-requisitos
