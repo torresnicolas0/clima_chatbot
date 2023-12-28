@@ -45,6 +45,22 @@ python -m spacy download es_core_news_sm
 3. Configurar las variables de entorno necesarias en `config.py`.
 4. Ejecutar `main.py` para iniciar el bot.
 
+## Configuración del Modelo
+
+Para que el chatbot funcione correctamente, necesita un modelo de clasificación previamente entrenado. Puedes crear el archivo `final_classification_model.pkl` siguiendo estos pasos:
+
+1. **Posicionarse en la Raíz del Proyecto:** Asegúrate de estar en el directorio raíz del proyecto antes de ejecutar cualquier script. Esto es generalmente donde se encuentra el archivo `main.py`.
+
+2. **Ejecutar el Script de Guardado del Modelo:** Ejecuta el siguiente comando para generar el modelo de clasificación:
+
+    ```bash
+    python model/save_model.py
+    ```
+
+   Este script procesará los datos necesarios, entrenará el modelo y lo guardará como `final_classification_model.pkl` en el directorio especificado dentro del script.
+
+3. **Verificar la Creación del Modelo:** Asegúrate de que el archivo `final_classification_model.pkl` se haya creado en la ubicación correcta. Este archivo es esencial para que el chatbot realice la clasificación de mensajes y responda adecuadamente.
+
 ## Uso
 Después de iniciar el bot, puedes interactuar con él a través de la plataforma de Telegram. Puedes pedirle información del tiempo, realizar preguntas generales o pedir ayuda.
 
