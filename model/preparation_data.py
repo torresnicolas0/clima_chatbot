@@ -5,11 +5,20 @@ import spacy
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 import numpy as np
+from log_config import get_logger
 
-# nlp = spacy.load('es_core_news_sm')
+logger = get_logger(__name__)
+
 # nlp = spacy.load('es_core_news_md')
 # nlp = spacy.load('es_core_news_lg')
-nlp = spacy.load('model/nlp_cargado')
+MODEL_NLP = 'es_core_news_sm'
+MODEL_NLP_LOADED = 'model/nlp_cargado'
+try:
+    nlp = spacy.load(MODEL_NLP_LOADED)
+except:
+    nlp = spacy.load(MODEL_NLP)
+    logger.info(f"{MODEL_NLP}")
+
 
 keyword_files = {
     'get_temperature_response':       'model/keyword/temperature_response.json',
