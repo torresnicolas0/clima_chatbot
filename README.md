@@ -91,5 +91,3 @@ Si deseas contribuir al proyecto, por favor haz un 'fork' del repositorio, reali
 Este proyecto está bajo la Licencia Apache License.
 ## Autores
 - Nicolás Torres - Desarrollo inicial y mantenimiento.
-## Contacto
-- torresnicolas@gmail.com - Para cualquier consulta o sugerencia.
